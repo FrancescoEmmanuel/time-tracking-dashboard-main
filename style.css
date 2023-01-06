@@ -1,0 +1,354 @@
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Rubik', sans-serif;
+    color: #fff;
+}
+.attribution {
+    font-size: 11px;
+    text-align: center;
+  }
+
+.attribution a {
+color: hsl(228, 53%, 41%);
+}
+
+@media  screen and (max-width: 1000px) {
+    main{
+        background-color: hsl(224, 54%, 7%)
+    }
+
+    .name{
+        font-size: 30px;
+        font-weight: 300;
+    }
+    .main{
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        padding: 5px;
+    }
+    
+    .main .user-box{
+        margin-right: 5px;
+        width: 100%;
+    }
+    
+    .main .user-info{
+        
+        background-color: blue;
+        border-radius: 20px;
+        padding: 15px;
+        position: relative;
+        z-index: 2;
+        display: flex;
+    }
+    
+    .main .user-info img{
+        width: 70px;
+        height: 70px;
+        margin-right: 10px;
+        border-radius: 100%;
+        border: solid white 4px;
+    }
+
+    .main .time-option button{
+        cursor: pointer;
+        text-align: left;
+        margin: 5 0;
+        background: transparent;
+        outline: none;
+        border: none;
+        font-size: 15px;
+        
+    }
+    .main .time-option{
+        background-color: hsl(236, 44%, 20%);
+        padding: 25px;
+        padding-left: 30px;
+        padding-top: 45px;
+        border-radius: 0 0 1em 1em;
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        
+        
+    }
+    
+    
+    
+    .main .activity-box{
+        display: grid;
+        gap: 25px;
+        grid-template-columns: repeat(1, 1fr);
+        
+    }
+
+    .activity-info{
+        cursor: pointer;
+        background-color:  hsl(236, 44%, 20%);
+        padding: 25px 30px;
+        border-radius: 15px;
+        transform: translateY(-15px);
+        transition: .3s ease all;
+        
+    }
+
+    
+    .activity-info:hover{
+        background-color: hsl(236, 46%, 35%)
+    }
+    
+    .activity-info .title {
+        display: flex;
+        justify-content: space-between;
+        width: 100;
+        font-size: 15px;
+    }
+    .activity-info p {
+        font-size: 15px;
+        display: inline;
+        float: right;
+        
+    }
+
+    .activity-info h2{
+        display: inline;
+        font-weight: 100;
+        font-size: 50px;
+        margin: 8 0;
+    }
+    
+   
+    .previous{
+        margin-top:30px;
+    }
+    .box{
+        height: 50px;
+        border-radius: 15 15 0 0;
+    }
+    
+    .work .box{
+        background-image: url("/images/icon-work.svg");
+        background-position: right;
+        background-repeat: no-repeat;
+        background-color:  hsl(15, 100%, 70%);
+    }
+    
+    .play .box{
+        background-image: url("/images/icon-play.svg");
+        background-position: right;
+        background-repeat: no-repeat;
+        background-color: hsl(195, 74%, 62%);
+    }
+    
+    
+    .exercise .box{
+        background-image: url("/images/icon-exercise.svg");
+        background-position: right;
+        background-repeat: no-repeat;
+        background-color:  hsl(145, 58%, 55%)
+    }
+    
+    .social .box{
+        background-image: url("images/icon-social.svg");
+        background-position: right;
+        background-repeat: no-repeat;
+        background-color: hsl(264, 64%, 52%)  
+    }
+    
+    .self-care .box{
+        background-image: url("images/icon-self-care.svg");
+        background-position: right;
+        background-repeat: no-repeat;
+    
+        background-color: hsl(43, 84%, 65%)
+    }
+
+    .study .box{
+        background-image: url("/images/icon-study.svg");
+        background-position: right;
+        background-repeat: no-repeat;
+        background-color: hsl(348, 100%, 68%);
+    }
+}
+
+
+@media  screen and (min-width: 750px) {
+    main{
+        height: 1000px;
+        background-color: hsl(224, 54%, 7%);
+        
+    }
+    
+    a, a:active, a:hover{
+        text-decoration: none;
+    }
+    
+    
+    
+    .main{
+        padding-top: 30px;
+        width: fit-content;
+        margin: 0 auto;
+        display: flex;
+       
+        
+    }
+    
+    .main .user-box{
+        margin-right: 20px;
+        width: 500px;
+        
+    }
+    
+    .main .user-info{
+        padding: 15px;
+        padding-bottom: 90px;
+        width: 100%;
+        background-color:  hsl(246, 83%, 54%);
+        z-index: 2;
+        border-radius: 15px;
+        position: relative;
+        
+    }
+    
+    .main .user-info img{
+        width: 100px;
+        border: solid white 4px;
+        margin-bottom: 30px;
+        border-radius: 100%;
+        
+    }
+    
+   
+    
+    .main .time-option button{
+        margin: 5 0;
+        background: transparent;
+        text-align: left;
+        border: none;
+        outline: none;
+        font-size: 15px;
+        cursor: pointer;
+    }
+
+    .main .time-option{
+        display: flex;
+        background-color: hsl(235, 60%, 17%);
+        padding: 25px;
+        padding-top: 40px;
+        padding-left: 20px;
+        border-radius: 0 0 15 15;
+        flex-direction: column;
+        z-index: 1;
+        transform: translateY(-15);
+        
+    }
+    .main .activity-box{
+        display: grid;
+        gap: 10px;
+        grid-template-columns: repeat(3, 1fr);
+        
+    }
+    
+    .activity-box{
+        min-width: 900px;
+    }
+    
+    .activity-info{
+        background-color: hsl(237, 58%, 14%);
+        padding: 20px 32px;
+        border-radius: 15px;
+        transform: translateY(-10px);
+        transition: .3s ease all;
+        cursor: pointer;
+    }
+    
+    .activity-info:hover{
+        background-color: hsl(236, 41%, 34%)
+    }
+    
+  
+    
+    .activity-info h2{
+        font-weight: 200;
+        font-size: 60px;
+        margin: .60px 0;
+    }
+
+    .activity-info .title {
+        display: flex;
+        justify-content: space-between;
+        width: 100;
+        font-size: 15px;
+    }
+    
+    .box{
+        height: 50px;
+        border-radius: 15 15 0 0;
+    }
+    
+  
+    .play .box{
+        background-image: url("/images/icon-play.svg");
+        background-position: right;
+        background-repeat: no-repeat;
+        background-color: hsl(195, 74%, 62%);
+    }
+    
+    .study .box{
+        background-image: url("/images/icon-study.svg");
+        background-position: right;
+        background-repeat: no-repeat;
+        background-color: hsl(348, 100%, 68%);
+    }
+    
+    .exercise .box{
+        background-image: url("/images/icon-exercise.svg");
+        background-position: right;
+        background-repeat: no-repeat;
+        background-color: hsl(145, 58%, 55%)
+    }
+    
+    .social .box{
+        background-image: url("/images/icon-social.svg");
+        background-position: right;
+        background-repeat: no-repeat;
+        background-color: hsl(264, 64%, 52%)  
+    }
+    .work .box{
+        background-image: url("/images/icon-work.svg");
+        background-position: right;
+        background-repeat: no-repeat;
+        background-color:hsl(15, 100%, 70%)
+        ;
+    }
+    
+    
+    .self-care .box{
+        background-image: url("/images/icon-self-care.svg");
+        background-position: right;
+        background-repeat: no-repeat;
+    
+        background-color: hsl(43, 84%, 65%)
+    }
+}
+
+
+.name{
+    font-size: 50px;
+    font-weight: 300;
+}
+
+
+.previous{
+    color:  hsl(0, 1%, 85%);
+}
+
+.dark{
+    color:  hsl(0, 1%, 85%);
+}
+
